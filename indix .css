@@ -1,0 +1,99 @@
+body {
+    background-image: url(images/12121.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #f1f1f1;
+    --bg: #555;
+    --sub-color: #860971;
+    --btn-color: rgb(202, 161, 199);
+}
+
+.nav {
+    width: 100vw;
+    height: 59px;
+    background-color: var(--bg);
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin: 0 15px;
+    padding: 18px 25px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.nav ul li:hover {
+    background-color: var(--sub-color);
+}
+
+.selected {
+    background-color: var(--sub-color);
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: center;
+    align-items: flex-start; */
+    margin: 0 auto;
+}
+
+.container .content {
+    background-color: var(--main-color);
+    width: 280px;
+    height: 350px;
+    text-align: center;
+    color: var(--sub-color);
+    box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.79);
+    border-radius: 20px;
+    margin: 15px 15px;
+}
+
+.container .content img {
+    width: 80%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.container .content p {
+    margin-top: 30px;
+}
+
+
+.container .content button {
+    width: 40%;
+    height: 30px;
+    background-color: var(--btn-color);
+    outline: none;
+    border: var(--main-color);
+    color: var(--main-color);
+    font-size: 20px;
+    border-radius: 30px;
+    margin-top: 35px;
+}
+
+.container .content button:hover {
+    background-color: rgb(10, 78, 197);
+    transform: scale(1.1, 1.1);
+    cursor: pointer;
+}
